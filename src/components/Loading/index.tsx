@@ -3,7 +3,7 @@ import styles from '@/components/Loading/Loading.module.css'; // Optional for cu
 
 const Loading: React.FC = () => {
     return (
-        <div className={styles.loaderWrapper}>
+        <div id="loading" className={styles.loaderWrapper}>
             <div className={styles.spinner}></div>
             <p><span>Loading...</span></p>
             <p><span>Thank you for checking out my portfolio Website!!</span></p>

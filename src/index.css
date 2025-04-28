@@ -18,7 +18,7 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden; /* Prevents horizontal scrolling globally */
   overflow-y: auto; /* Ensures vertical scrolling is enabled */
-  background: var(--background-color);
+  background-color: var(--background-color);
 }
 
 main {

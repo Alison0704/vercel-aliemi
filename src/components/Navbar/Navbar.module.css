@@ -1,4 +1,6 @@
 .main{
+    top: 0;
+    left: 0;
     color: var(--text-color);
     text-align: center;
     font-size: 20px;
