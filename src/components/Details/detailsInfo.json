@@ -1,0 +1,64 @@
+{
+  "work": {
+    "1": {
+      "title": "Pension and Benefits Assistant",
+      "location": "University of Ottawa - Ottawa",
+      "date": "May 2023 - Apr 2025",
+      "responsibilities": "res1",
+      "skillsGained": "skills1",
+      "appreciation": "app1"
+    },
+    "2": {
+      "title": "title2",
+      "location": "location2",
+      "date": "date2",
+      "responsibilities": "res2",
+      "skillsGained": "skills2",
+      "appreciation": "app2"
+    },
+    "3": {
+      "title": "title3",
+      "location": "location3",
+      "date": "date3",
+      "responsibilities": "res3",
+      "skillsGained": "skills3",
+      "appreciation": "app3"
+    },
+    "4": {
+      "title": "title4",
+      "location": "location4",
+      "date": "date4",
+      "responsibilities": "res4",
+      "skillsGained": "skills4",
+      "appreciation": "app4"
+    },
+    "5": {
+      "title": "title5",
+      "location": "location5",
+      "date": "date5",
+      "responsibilities": "res5",
+      "skillsGained": "skills5",
+      "appreciation": "app5"
+    }
+  },
+  "academics": {
+    "1": {
+      "title": "title1",
+      "location": "location1",
+      "date": "date1",
+      "Description": "des1",
+      "courses": "skills1",
+      "appreciation": "app1"
+    },
+    "2": {
+      "title": "title1",
+      "location": "location1",
+      "date": "date1",
+      "Description": "des1",
+      "courses": "skills1",
+      "appreciation": "app1"
+    }
+  },
+  "workTotal": 5,
+  "academicsTotal": 2
+}

@@ -1,68 +1,152 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+:root{
+  --primary-color: hsl(214, 98%, 34%);
+  --secondary-color: #EC8305;
+  --background-color: #091057;
+  --text-color: #DBD3D3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-color);
+  height: 100vh;
+  width: 100vw;
+}
+/* Smooth scrolling for anchor links */
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevents horizontal scrolling globally */
+  overflow-y: auto; /* Ensures vertical scrolling is enabled */
+  background: var(--background-color);
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
-a:hover {
-  color: #535bf2;
-}
-
-body {
+h1{
+  font-size: 2.5rem;
+  color: var(--text-color);
   margin: 0;
+  text-align: left;
+}
+h2{
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0;
+  text-align: left;
+}
+h3{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0;
+  text-align: left;
+}
+h4{
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0;
+  text-align: left;
+}
+p{
+  font-size: 0.7rem;
+  color: var(--text-color);
+  margin: 0;
+}
+span{
+  color: var(--secondary-color);
+}
+
+section{
+  margin: 3.5rem auto;
+  padding: 2rem;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 25px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background: rgba(2, 75, 172,0.2);
+  backdrop-filter: blur(5px); /* Creates the glass effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+  border: 1.5px solid var(--primary-color); /* Subtle border for the glass effect */
+  color: var(--text-color); /* Text color for contrast */
+  overflow-y: hidden;
+}
+label{
+  color: var(--secondary-color);
+  padding-bottom: 0.5rem;
+  display: flex;
+}
+input{
+  border: none;
+  outline: none;
+  background: rgba(2, 75, 172,0.3);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+input::placeholder {
+  color: rgba(205, 94, 14, 0.3);
+  font-family: 'JetBrains Mono', monospace;
+}
+textarea{
+  border: none;
+  outline: none;
+  background: rgba(2, 75, 172,0.3);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+textarea::placeholder {
+  color: rgba(205, 94, 14, 0.3);
+  font-family: 'JetBrains Mono', monospace;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.background{
+  position: fixed; /* Ensures the background stays in place during scrolling */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Covers the full height of the viewport */
+  width: 100vw; /* Covers the full width of the viewport */
+  overflow: hidden; /* Prevents any overflow issues */
+  opacity: 0.25; /* Keeps the transparency */
+  z-index: -1; /* Places the background behind other content */
+  object-fit: cover;
+  pointer-events: none; /* Ensures it doesn't block interaction */
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  padding-left: 7px;  
+  z-index: 2; /* Ensures the scrollbar is above other content */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+::-webkit-scrollbar-track {
+  background: var(--background-color); /* Background color of the scrollbar track */
+  border-radius: 5px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2,75,172,0.4); /* Color of the thumb on hover */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }

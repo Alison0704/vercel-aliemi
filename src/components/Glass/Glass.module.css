@@ -1,0 +1,11 @@
+.glass {
+    opacity: 80%;
+    background: rgba(2, 75, 172,0.2);
+    backdrop-filter: blur(5px); /* Creates the glass effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for the glass effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    color: var(--text-color); /* Text color for contrast */
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+    padding: 0.8rem 2rem; /* Controls internal spacing within the button */
+    margin: 0.5rem 1rem;
+}
+

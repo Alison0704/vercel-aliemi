@@ -1,0 +1,47 @@
+/* Home.module.css */
+
+.content{
+    display: flex;
+}
+.resumeContainer{
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.resumeContainer p{
+    padding: 0.5rem;
+}
+
+.buttonContainer {
+    display: flex; /* Flexbox layout */
+    gap: 0.5rem; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.buttonContainer a {
+    text-decoration: none;
+}
+
+.imageContainer {
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+.image{
+    width: 10%;
+    height: 10%;
+    object-position: center;
+    border-radius: 50%;
+}
+.callToAction{
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+}
