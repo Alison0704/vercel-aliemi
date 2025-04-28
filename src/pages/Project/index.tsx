@@ -22,7 +22,6 @@ const Project: React.FC = () => {
                     {items.map((item) => (
                         <a href={item.link} target='_blank'>
                             <div key={item.id} className={style.container}>
-                                <div className={style.background} style={{ backgroundImage: `url(${item.image})` }}></div>
                                 <div className={style.content}>
                                     <h3 className={style.title}><span>{item.label}</span></h3>
                                     <div className={style.text}>
