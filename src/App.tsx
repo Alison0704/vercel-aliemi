@@ -58,6 +58,7 @@ function App() {
                 <main>
                     <Home />
                     <Project />
+                    {/*TODO: Eventually add all characters in 1 div with icons; have a pop up window to describe them*/}
                     <Work currentSection={section} onNavigate={setSection} onNavigateToDetails={handleNavigateToDetails} />
                     <Academic currentSection={section} onNavigate={setSection} onNavigateToDetails={handleNavigateToDetails}/>
                     <Contact />

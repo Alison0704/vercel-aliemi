@@ -45,32 +45,42 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
     if (!item) return null;
 
     return (
-        <div id="details">
-            <div className={style.container}>
-                <p>┌─────────────────────────────────────────────────────────────┐</p>
-                <div className={style.content}>
-                    <p><strong>Title:</strong> {item.title}</p>
-                    <p><strong>Location:</strong> {item.location}</p>
-                    <p><strong>Date:</strong> {item.date}</p>
-                </div>
-                <p>└─────────────────────────────────────────────────────────────┘</p>
-
-                {type === 'work' && (
-                    <>
-                        <p><strong>Responsibilities:</strong> {(item as WorkItem).responsibilities}</p>
-                        <p><strong>Skills Gained:</strong> {(item as WorkItem).skillsGained}</p>
-                    </>
-                )}
-
-                {type === 'academics' && (
-                    <>
-                        <p><strong>Description:</strong> {(item as AcademicItem).Description}</p>
-                        <p><strong>Courses:</strong> {(item as AcademicItem).courses}</p>
-                    </>
-                )}
-
-                <p><strong>Appreciation:</strong> {item.appreciation}</p>
+        <div id="details" className={style.container}>
+            <p>┌─────────────────────────────────────────────────────────────┐</p>
+            <div className={style.content}>
+                <p>│ <strong>Title:</strong> {item.title}</p>
+                <p>│ <strong>Location:</strong> {item.location}</p>
+                <p>│ <strong>Date:</strong> {item.date}</p>
             </div>
+            <p>└─────────────────────────────────────────────────────────────┘</p>
+
+            {type === 'work' && (
+                <>
+                    <p><strong>Responsibilities: </strong></p>
+                    <ul>
+                        {(item as WorkItem).responsibilities.split('\n').map((line, idx) => (
+                            <li key={idx}><p>- {line}</p></li>
+                        ))}
+                    </ul>
+                    <p><strong>Skills Gained:</strong> {(item as WorkItem).skillsGained}</p>
+                </>
+            )}
+
+            {type === 'academics' && (
+                <>
+                    <p><strong>Description:</strong></p>
+                    <p className={style.description}>{(item as AcademicItem).Description}</p>
+                    <p><strong>Courses:</strong></p>
+                    <ul>
+                        {(item as AcademicItem).courses.split(',').map((course, idx) => (
+                            <li key={idx}><p>- {course.trim()}</p></li>
+                        ))}
+                    </ul>
+                </>
+            )}
+
+            <p> <strong>Appreciation: </strong>{item.appreciation}</p>
+
         </div>
     );
 };
