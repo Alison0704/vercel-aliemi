@@ -3,6 +3,11 @@
 .content{
     display: flex;
 }
+
+.content h1 span{
+    color: var(--primary-color);
+}
+
 .resumeContainer{
     margin-top: 1rem;
     gap: 2rem;

@@ -25,7 +25,7 @@ const Academic: React.FC<NavBarProps> = ({ currentSection, onNavigate, onNavigat
                                 <div className={style.item} key={item.id}>
                                     <h4 key={item.id}>{item.title}</h4>
                                     <p key={item.id}>{item.date}</p>
-                                    <p className={style.callToAction}>Click me for more details</p>
+                                    <p className={style.callToAction}><span>Click me for more details</span></p>
                                 </div>
                                 </a>
                             ))}

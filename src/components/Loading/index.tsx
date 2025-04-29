@@ -6,7 +6,7 @@ const Loading: React.FC = () => {
         <div id="loading" className={styles.loaderWrapper}>
             <div className={styles.spinner}></div>
             <p><span>Loading...</span></p>
-            <p><span>Thank you for checking out my portfolio Website!!</span></p>
+            <p><span>Thank you for checking out my portfolio Website.</span></p>
         </div>
     );
 };

@@ -8,10 +8,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .comment {
     color: #888;
     font-style: italic;
@@ -27,6 +23,7 @@ a:hover {
     height: 93vh;
     background-color: #000;
 }
+
 
 .container p{
     color: var(--secondary-color);

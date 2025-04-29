@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '@/pages/About/About.module.css';
-
+//TODO: update about me
 const About: React.FC = () => {
     return (
         <div id="about">
