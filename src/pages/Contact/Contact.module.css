@@ -5,3 +5,7 @@
     margin: 1rem;
     padding: 0.6rem;
 }
+
+.content label{
+    color: var(--primary-color);
+}

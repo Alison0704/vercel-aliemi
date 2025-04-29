@@ -37,3 +37,7 @@
 .content p{
     color: var(--background-color);
 }
+.content p span{
+    color: var(--primary-color);
+}
+

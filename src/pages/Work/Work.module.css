@@ -13,7 +13,9 @@
 .content p{
     color: var(--background-color);
 }
-
+.content p span{
+    color: var(--primary-color);
+}
 .item{
     display: flex;
     flex-direction: column;
