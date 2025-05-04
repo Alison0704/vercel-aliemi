@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import NavBar from '@/components/Navbar';
 import Home from '@/pages/Home';
 import Project from '@/pages/Project';
+import Characters from '@/pages/Characters';
 import Work from '@/pages/Work';
 import Academic from '@/pages/Academic';
 import Contact from '@/pages/Contact';
@@ -59,6 +60,7 @@ function App() {
                     <Home />
                     <Project />
                     {/*TODO: Eventually add all characters in 1 div with icons; have a pop up window to describe them*/}
+                    <Characters />
                     <Work currentSection={section} onNavigate={setSection} onNavigateToDetails={handleNavigateToDetails} />
                     <Academic currentSection={section} onNavigate={setSection} onNavigateToDetails={handleNavigateToDetails}/>
                     <Contact />

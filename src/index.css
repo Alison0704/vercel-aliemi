@@ -34,28 +34,24 @@ h1{
   font-size: 2.5rem;
   color: var(--text-color);
   margin: 0;
-  text-align: left;
   text-decoration: none;
 }
 h2{
   font-size: 2rem;
   color: var(--text-color);
   margin: 0;
-  text-align: left;
   text-decoration: none;
 }
 h3{
   font-size: 1.5rem;
   color: var(--text-color);
   margin: 0;
-  text-align: left;
   text-decoration: none;
 }
 h4{
   font-size: 1rem;
   color: var(--text-color);
   margin: 0;
-  text-align: left;
   text-decoration: none;
 }
 p{
@@ -73,7 +69,6 @@ ul{
   padding: 0 0 0 1rem;
   margin: 0;
 }
-
 section{
   margin: 3.5rem auto;
   padding: 2rem;
@@ -161,3 +156,44 @@ textarea::placeholder {
   background: rgba(2,75,172,0.4); /* Color of the thumb on hover */
   cursor: pointer; /* Changes cursor to pointer on hover */
 }
+
+@media only screen and (max-width: 800px) {
+  section{
+    width: 70vw;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 0.7rem;
+  }
+  h4{
+    font-size: 0.5rem;
+  }
+  p{
+    font-size: 0.5rem;
+  }
+  button{
+    font-size: 0.5rem;
+  }
+  label{
+    font-size: 0.5rem;
+  }
+  input{
+    font-size: 0.5rem;
+  }
+  textarea{
+    font-size: 0.5rem;
+  }
+  input::placeholder{
+    font-size: 0.5rem;
+  }
+  textarea::placeholder{
+    font-size: 0.5rem;
+  }
+
+}
+

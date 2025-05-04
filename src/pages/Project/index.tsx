@@ -1,9 +1,9 @@
 import React from 'react';
 import style from '@/pages/Project/Project.module.css';
-import Adrien from '@/pages/Project/images/Adrien.png';
-import Chloe from '@/pages/Project/images/Chloe.png';
-import Emily from '@/pages/Project/images/Emily.png';
-import Alister from '@/pages/Project/images/Alister.png';
+import Adrien from '@/pages/Characters/images/Adrien.png';
+import Chloe from '@/pages/Characters/images/Chloe.png';
+import Emily from '@/pages/Characters/images/Emily.png';
+import Alister from '@/pages/Characters/images/Alister.png';
 
 
 const Project: React.FC = () => {
