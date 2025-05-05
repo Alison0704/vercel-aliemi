@@ -8,7 +8,9 @@ import Alister from '@/pages/Characters/images/Alister.png';
 const Characters: React.FC = () => {
 
     return (
+        <div className={style.containerWidth}>
         <div id="characters" className={style.container}>
+            {/*------------------------------Character: section*------------------------------*/}
             <div className={style.content}>
                 <a className={style.button} href="#popup1">
                     <div className={style.image}
@@ -29,7 +31,8 @@ const Characters: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
+                {/*----------------------------------------------------------------------*/}
+                {/*Character: section*/}
                 <div className={style.image}
                      style={{borderRadius: '50%', overflow: 'hidden', width: '120px', height: '120px'}}>
                     <img className="image"
@@ -37,6 +40,7 @@ const Characters: React.FC = () => {
                          style={{width: '100%', height: '100%', objectFit: 'cover'}}
                     />
                 </div>
+                {/*------------------------------Character: section*------------------------------*/}
                 <div className={style.image}
                      style={{borderRadius: '50%', overflow: 'hidden', width: '120px', height: '120px'}}>
                     <img className="image"
@@ -45,6 +49,7 @@ const Characters: React.FC = () => {
                          style={{width: '100%', height: '100%', objectFit: 'cover'}}
                     />
                 </div>
+                {/*------------------------------Character: section*------------------------------*/}
                 <div className={style.image}
                      style={{borderRadius: '50%', overflow: 'hidden', width: '120px', height: '120px'}}>
                     <img className="image"
@@ -54,7 +59,7 @@ const Characters: React.FC = () => {
                     />
                 </div>
             </div>
-
+        </div>
         </div>
     );
 };
