@@ -19,7 +19,7 @@ const Project: React.FC = () => {
                             <a href={item.link} target='_blank'>
                                 <div key={item.id} className={style.container}>
                                     <div className={style.content}>
-                                        <h3 className={style.title}><span>{item.label}</span></h3>
+                                        <h3 className={style.title}>{item.label}</h3>
                                         <div className={style.text}>
                                             <p>{item.text}</p>
                                             <p><span>Click me to see more</span></p>
