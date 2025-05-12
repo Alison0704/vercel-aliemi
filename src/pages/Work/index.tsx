@@ -22,14 +22,15 @@ const Work: React.FC<NavBarProps> = ({ currentSection, onNavigate, onNavigateToD
         <div id="work">
             {currentSection === 'main' ? (
             <section>
-                <h2>Work Experiences</h2>
-                <div className={style.content}>
+                <h2 className={style.title}>Work Experiences</h2>
+                <div className={style.workContent}>
                     {items.map(item => (
                         <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('details'); onNavigateToDetails('work',item.id.toString()); }}>
                             <div className={style.item} key={item.id}>
                                 <h4 key={item.id}>{item.title}</h4>
                                 <p key={item.id}>{item.date}</p>
-                                <p className={style.callToAction}><span>Click me for more details</span></p>
+                                <p className={style.bigScreen}><span>Click me for more details</span></p>
+                                <p className={style.smallScreen}><span>Tap me for more details</span></p>
                             </div>
                         </a>
                     ))}

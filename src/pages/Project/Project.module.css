@@ -26,14 +26,10 @@
 }
 .gridContainer .title span{
     font-size: 1.5rem;
-    color: var(--primary-color);
 }
 .gridContainer .text {
     opacity: 0;
     transition: opacity 0.3s ease;
-}
-.gridContainer .container:hover .background {
-    opacity: 0.5;
 }
 .gridContainer .container:hover .text {
     opacity: 1;
@@ -60,6 +56,7 @@
     align-items: center;
     text-align: center;
     height: 100%;
+    color: var(--text-primary-color);
 }
 
 /*For rows*/
@@ -67,49 +64,29 @@
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
-    margin: 0 auto 50px auto;
     align-items: self-start;
     height: 100%;
     width: 100%;
-}
-.rows h2{
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.rowContainer .item h4{
-    font-size: 0.7rem;
-    color: var(--primary-color);
-    text-align: left;
-}
-.rowContainer .item p{
-    text-align: left;
-    font-size: xx-small;
-    color: var(--text-primary-color);
-}
-.rowContainer .item p span{
-    color: var(--primary-color);
 }
 .rowContainer .item{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     padding: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     gap: 0.5rem;
-    width: 60vw;
     font-size: 0.4rem;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
     background: rgba(2,75, 172,0.2);
-    backdrop-filter: blur(5px); /* Creates the glass effect */
-    -webkit-backdrop-filter: blur(5px); /* For Safari support */
-    border: 1px solid var(--primary-color); /* Subtle border for the glass effect */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--primary-color);
 }
 .rowContainer .item:hover{
     background: rgba(2,75, 172,0.6);
     cursor: pointer;
 }
-
 
 @media (max-width: 800px) {
     .grid{
@@ -119,18 +96,12 @@
         display: flex;
     }
 }
-
 @media (max-width: 400px) {
     .rowContainer .item{
         width: 50vw;
     }
-    .rows h2{
-        font-size: 1rem;
-    }
-    .rowContainer h4{
-        font-size: 1rem;
-    }
 }
+
 
 
 

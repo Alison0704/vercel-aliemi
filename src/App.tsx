@@ -56,6 +56,7 @@ function App() {
             <NavBar currentSection={section} onNavigate={setSection} />
             {section === 'main' && (
                 <main>
+                    {/*Hide the id name section in the URL link*/}
                     <Home />
                     <Project />
                     <Work currentSection={section} onNavigate={setSection} onNavigateToDetails={handleNavigateToDetails} />

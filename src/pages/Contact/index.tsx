@@ -36,7 +36,8 @@ const Contact: React.FC = () => {
     return (
         <div id="contact">
             <section>
-                <h2>Contact Me</h2>
+                <div className={style.contactContent}>
+                    <h2>Contact Me</h2>
                 <form ref={form} onSubmit={sendEmail} >
                     <div className={style.content}>
                         <label>Name</label>
@@ -72,6 +73,7 @@ const Contact: React.FC = () => {
                         Send Message
                     </button>
                 </form>
+                </div>
             </section>
         </div>
     );
