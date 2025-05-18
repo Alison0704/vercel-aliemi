@@ -16,7 +16,7 @@ const ListFormat: React.FC<ListFormatProps> = ({title,description,date,type}) =>
                 {(date || type) && (
                     <div className={style.listMeta}>
                         {date && <p>{date}</p>}
-                        {type && <p>{type}</p>}
+                        {type && <p>Type: {type}</p>}
                     </div>
                 )}
             <p><span>Select me for more details</span></p>
