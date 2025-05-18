@@ -34,8 +34,8 @@ const Home: React.FC = () => {
                 <div className={style.imageContainer}
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
-                     style={{borderRadius: '50%', overflow: 'hidden', width: '200px', height: '200px'}}>
-                    <img className="image"
+                     style={{borderRadius: '50%', overflow: 'hidden'}}>
+                    <img className={style.image}
                          src={currentImage}
                          alt="Hover to change"
                          style={{width: '100%', height: '100%', objectFit: 'cover'}}

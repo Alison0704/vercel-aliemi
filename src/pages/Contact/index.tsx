@@ -1,4 +1,5 @@
 import style from '@/pages/Contact/Contact.module.css';
+import Button from '@/components/Button';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -67,11 +68,9 @@ const Contact: React.FC = () => {
                             required
                         ></textarea>
                     </div>
-                    <button
-                        type="submit"
-                    >
-                        Send Message
-                    </button>
+                    <Button label="Send Message" type="submit" onClick={function (): void {
+                        throw new Error('Function not implemented.');
+                    }} />
                 </form>
                 </div>
             </section>

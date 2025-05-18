@@ -14,15 +14,15 @@ const NavBar: React.FC<NavBarProps> = ({ currentSection, onNavigate }) => {
                     <div className={style.main}>
                         <div className={style.nav}>
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a  className={style.underlineHover} href="#">Home</a></li>
                                 <li>
-                                    <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('about'); }}>
+                                    <a  className={style.underlineHover} href="#" onClick={(e) => { e.preventDefault(); onNavigate('about'); }}>
                                         About me
                                     </a>
                                 </li>
-                                <li><a href="#project">Projects</a></li>
-                                <li><a href="#work">Experiences</a></li>
-                                <li><a href="#contact"><span>Contact me</span></a></li>
+                                <li><a className={style.underlineHover} href="#project">Projects</a></li>
+                                <li><a className={style.underlineHover} href="#work">Experiences</a></li>
+                                <li><a className={style.underlineHoverContact} href="#contact"><span>Contact me</span></a></li>
                             </ul>
                         </div>
                         <div className={style.smallTitle}>AliEmi's Portfolio website</div>

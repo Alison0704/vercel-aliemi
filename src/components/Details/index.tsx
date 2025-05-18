@@ -58,7 +58,7 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
                 <>
                     <p><strong>Responsibilities: </strong></p>
                     <ul>
-                        {(item as WorkItem).responsibilities.split('\n').map((line, idx) => (
+                        {(item as WorkItem).responsibilities.split(';').map((line, idx) => (
                             <li key={idx}><p>- {line}</p></li>
                         ))}
                     </ul>
@@ -72,7 +72,7 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
                     <p className={style.description}>{(item as AcademicItem).Description}</p>
                     <p><strong>Courses:</strong></p>
                     <ul>
-                        {(item as AcademicItem).courses.split(',').map((course, idx) => (
+                        {(item as AcademicItem).courses.split(';').map((course, idx) => (
                             <li key={idx}><p>- {course.trim()}</p></li>
                         ))}
                     </ul>

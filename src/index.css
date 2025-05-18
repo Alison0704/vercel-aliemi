@@ -50,7 +50,7 @@ h2{
 }
 h3{
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin: 0;
   text-align: left;
   text-decoration: none;
@@ -72,6 +72,8 @@ p{
 span{
   color: var(--secondary-color);
   text-decoration: none;
+  margin: 0;
+  text-align: left;
 }
 ul{
   list-style: none;
@@ -166,66 +168,45 @@ textarea::placeholder {
   cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
-@media only screen and (max-width: 800px) {
-  section{
-    width: 70vw;
+/* Responsive at max-width: 800px */
+@media (max-width: 800px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.7rem; text-align:center }
+  h3 { font-size: 1.3rem; }
+  h4 { font-size: 1rem; }
+  p, span { font-size: 0.65rem; }
+}
+
+/* Responsive at max-width: 400px */
+@media (max-width: 400px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; text-align:center }
+  h3 { font-size: 1.1rem; }
+  h4 { font-size: 0.9rem; }
+  p, span { font-size: 0.6rem; }
+}
+
+/* Responsive at max-width: 800px */
+@media (max-width: 800px) {
+  label {
+    font-size: 0.7rem;
   }
-  h1{
-    font-size: 1.7rem;
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 0.65rem;
   }
-  h2{
-    font-size: 1.5rem;
-  }
-  h3{
-    font-size: 1rem;
-  }
-  h4{
-    font-size: 0.9rem;
-  }
-  p{
-    font-size: 0.5rem;
-  }
-  button{
-    font-size: 0.5rem;
-  }
-  label{
-    font-size: 0.5rem;
+}
+
+/* Responsive at max-width: 400px */
+@media (max-width: 400px) {
+  label {
+    font-size: 0.6rem;
   }
   input{
-    font-size: 0.5rem;
+    padding: 0.7rem;
   }
-  textarea{
-    font-size: 0.5rem;
-  }
-  input::placeholder{
-    font-size: 0.5rem;
-  }
-  textarea::placeholder{
-    font-size: 0.5rem;
-  }
-  html {
-    font-size: 1rem;
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 0.6rem;
   }
 }
-
-@media only screen and (max-width: 400px) {
-  h1{
-    font-size: 1.4rem;
-  }
-  h2{
-    font-size: 1rem;
-  }
-  h3{
-    font-size: 0.7rem;
-  }
-  h4{
-    font-size: 0.7rem;
-  }
-  p{
-    font-size: 0.2rem;
-  }
-  html {
-    font-size: 0.75rem;
-  }
-}
-
