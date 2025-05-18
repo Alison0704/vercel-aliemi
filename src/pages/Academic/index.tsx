@@ -24,7 +24,7 @@ const Academic: React.FC<NavBarProps> = ({ currentSection, onNavigate, onNavigat
                         <div className={style.academicContent}>
                             {items.map(item => (
                                 <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('details'); onNavigateToDetails('academics',item.id.toString()); }}>
-                                    <ListFormat title={item.title} date={item.date} />
+                                    <ListFormat title={item.title} type={item.type} date={item.date} />
                                 </a>
                             ))}
                         </div>
