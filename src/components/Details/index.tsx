@@ -46,13 +46,13 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
 
     return (
         <div id="details" className={style.container}>
-            <p>┌─────────────────────────────────────────────────────────────┐</p>
+            <p>┌─────────────────────────────────────────────────────────────────────────────────────┐</p>
             <div className={style.content}>
                 <p>│ <strong>Title:</strong> {item.title}</p>
                 <p>│ <strong>Location:</strong> {item.location}</p>
                 <p>│ <strong>Date:</strong> {item.date}</p>
             </div>
-            <p>└─────────────────────────────────────────────────────────────┘</p>
+            <p>└─────────────────────────────────────────────────────────────────────────────────────┘</p>
 
             {type === 'work' && (
                 <>
@@ -62,10 +62,13 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
                             <li key={idx}><p>- {line}</p></li>
                         ))}
                     </ul>
-                    <p><strong>Skills Gained:</strong> {(item as WorkItem).skillsGained}</p>
+                    <p><strong>Skills Gained:</strong><ul>
+                        {(item as WorkItem).skillsGained.split(';').map((line, idx) => (
+                            <li key={idx}><p>- {line}</p></li>
+                        ))}
+                    </ul></p>
                 </>
             )}
-
             {type === 'academics' && (
                 <>
                     <p><strong>Description:</strong></p>
@@ -78,9 +81,12 @@ const Details: React.FC<DetailsProps> = ({type, id}) => {
                     </ul>
                 </>
             )}
-
-            <p> <strong>Appreciation: </strong>{item.appreciation}</p>
-
+            <p><strong>Appreciation:</strong></p>
+            <ul>
+                {(item as WorkItem).appreciation.split(';').map((line, idx) => (
+                    <li key={idx}><p>- {line}</p></li>
+                ))}
+            </ul>
         </div>
     );
 };

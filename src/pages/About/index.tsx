@@ -4,38 +4,58 @@ import style from '@/pages/About/About.module.css';
 const About: React.FC = () => {
     return (
         <div id="about">
+
             <div className={style.container}>
-                <p>***This is temporary***</p>
+                {/*whoami*/}
+                <div className={style.terminalLine}>whoami</div>
+                <p>aliemi</p>
+                <div className={style.comment}># Full name: Marie Annaëlle Alison Emilien</div>
+                {/*origins*/}
+                <div className={style.terminalLine}>links <a href={"https://en.wikipedia.org/wiki/Mauritius"} target={"_blank"}>https://en.wikipedia.org/wiki/Mauritius</a></div>
+                {/* biography */}
+                <div className={style.terminalLine}>cat background.txt</div>
+                <div className={style.multiResult}>Proud mixed-race and trilingual (English, French, Mauritian Creole) Mauritian</div>
+                <div className={style.multiResult}>Driven by curiosity, compassion, and a desire to create meaningful impact through technology and design</div>
+                <div className={style.multiResult}>Believer in learning by doing — always exploring, building, and improving</div>
 
+                {/* strength */}
+                <div className={style.terminalLine}>cat strength.txt</div>
+                <div className={style.multiResult}>Relentlessly resourceful and solutions-oriented, especially under pressure</div>
+                <div className={style.multiResult}>Highly adaptable and always eager to learn new tools, languages, and concepts</div>
 
-                <div className="terminal-line">whoami</div>
-                <p>Alison Emilien</p>
+                {/* weakness */}
+                <div className={style.terminalLine}>cat weakness.txt</div>
+                <div className={style.multiResult}>Can get too absorbed in details, occasionally losing track of the bigger picture</div>
+                <div className={style.multiResult}>Tends to overthink decisions when under time constraints</div>
 
-                <div className="terminal-line">echo "Location"</div>
-                <p>Port-Louis, Mauritius</p>
+                <div className={style.terminalLine}>shred weakness.txt</div>
+                <div className={style.terminalLine}>cat weakness.txt</div>
+                <p>?ˏN?????H??4?0?[wtɱ½????#'%?,?aAJ????Og????&?jrMky???E@A??3d?E?rO??????Å	h$??#?RaC???Y??^Z?i?_??jDԲ$???^???-??ī</p>
+                <p>?rO??????Å	h$?0?[wt#?RaC0?[???#'%#?RaC???Y??^Z#?RaC???Y??^Z ?y???E@A _??jDԲ$????H??4?0?[wtɱ½??Y??^Z?i?_??jDԲ</p>
 
-                <div className="terminal-line">cat interests.txt</div>
-                <ul>
-                    <li>Drawing animal and human anatomy</li>
-                    <li>Learning new art techniques</li>
-                    <li>Exploring creative storytelling</li>
-                </ul>
+                {/* interests */}
+                <div className={style.terminalLine}>cat interests.txt</div>
+                <div className={style.multiResult}>Chip design, embedded systems, and the intersection of hardware and software</div>
+                <div className={style.multiResult}>Creating digital art and characters in Clip Studio Paint</div>
+                <div className={style.multiResult}>Playing piano and revisiting athletic roots in javelin and shot put</div>
 
-                <div className="terminal-line">cat bio.txt</div>
-                <p>
-                    I’m passionate about improving my art, especially anatomy-focused work. I love observing people and
-                    animals, and turning that into expressive drawings.
-                </p>
+                {/* philosophy */}
+                <div className={style.terminalLine}>cat philosophy.txt</div>
+                <div className={style.multiResult}>Build with purpose. Learn with intent. Fail forward.</div>
+                <div className={style.multiResult}>Complex problems deserve thoughtful, elegant solutions — both in code and in life.</div>
+                <div className={style.multiResult}>Technology should empower people, not overwhelm them.</div>
 
-                <div className="terminal-line">echo "Fun Fact"</div>
-                <p>
-                    I often sketch while listening to music or creative podcasts!
-                </p>
-
-                <div className="terminal-line">open linkedin.com/in/yourprofile</div>
-                <p><a href="https://www.linkedin.com/in/alison-emilien/" target="_blank">LinkedIn Profile</a></p>
-
-                <p className="comment"># This page simulates a terminal interface</p>
+                {/* setup */}
+                <div className={style.terminalLine}>cat setup.sh</div>
+                <div className={style.multiResult}>#!/bin/bash</div>
+                <div className={style.multiResult}># Dev environment & tools</div>
+                <div className={style.multiResult}>alias editor='code'</div>
+                <div className={style.multiResult}>export LANGUAGES="C Verilog Python TypeScript Bash"</div>
+                <div className={style.multiResult}>export TOOLS="ModelSim Quartus Vivado Cadence VSCode Git"</div>
+                <div className={style.multiResult}>export STACK="React + Vite + Tailwind + Node.js"</div>
+                <div className={style.multiResult}>export OS="macOS + Linux (WSL)"</div>
+                <div className={style.multiResult}>export HOBBIES="Digital Art Music Athletics Automation"</div>
+                <div className={style.multiResult}>echo "Environment ready. Time to build something great."</div>
 
             </div>
         </div>

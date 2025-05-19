@@ -1,18 +1,19 @@
-.terminal-line::before {
-    content: "$ ";
-    color: #d59668;
+.terminalLine::before {
+    content: "bash-3.2$ ";
+    color: var(--secondary-color);
 }
-
-a {
-    color: #ff6900;
-    text-decoration: none;
+.terminalLine{
+    margin-top: 0.5rem;
 }
-
-.comment {
-    color: #888;
+.container div{
+    font-family: 'JetBrains Mono', monospace;
+}
+.container a{
+    color: var(--secondary-color);
+    font-weight: 600;
     font-style: italic;
+    text-decoration: underline;
 }
-
 .container{
     padding-top: 3rem;
     display: flex;
@@ -21,10 +22,26 @@ a {
     justify-content: start;
     width: 100vw;
     height: 93vh;
-    background-color: #000;
+    margin: 0 auto;
+    font-size: 1rem;
 }
-
-
 .container p{
-    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-secondary-color);
+    font-size: 1rem;
+}
+.comment{
+    color: #333333;
+}
+.multiResult::before{
+    content: "| - ";
+    color: var(--text-secondary-color);
+}
+.multiResult::after{
+    content: ".";
+    color: var(--text-secondary-color);
+}
+.multiResult{
+    color: var(--text-secondary-color);
 }

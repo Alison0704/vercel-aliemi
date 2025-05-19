@@ -4,61 +4,77 @@
       "title": "Pension and Benefits Assistant",
       "location": "University of Ottawa - Ottawa",
       "date": "May 2023 - Present",
-      "responsibilities": "res1",
-      "skillsGained": "skills1",
-      "appreciation": "app1"
+      "responsibilities": "Maintain confidential HR and benefits records.;Assist employees with enrollment and claims for pension and benefit plans",
+      "skillsGained": "Confidential data handling.;Communication in professional/HR contexts.;Attention to detail with financial/legal documents.",
+      "appreciation": "Developed strong trust with employees regarding sensitive information."
     },
     "2": {
-      "title": "Teaching assistant - Digital System I",
-      "location": "location2",
-      "date": "date2",
-      "responsibilities": "res2",
-      "skillsGained": "skills2",
-      "appreciation": "app2"
-    },
-    "3": {
-      "title": "title3",
-      "location": "location3",
-      "date": "date3",
-      "responsibilities": "res3",
-      "skillsGained": "skills3",
-      "appreciation": "app3"
-    },
-    "4": {
       "title": "Teaching assistant - Digital System I",
       "location": "University of Ottawa - Ottawa",
       "date": "Jan 2025 - Apr 2025",
       "responsibilities": "Held weekly office hours and responded to student queries to support learning and understanding of course material.; Led tutorial/lab sessions covering Quartus II, Altera Card and basic digital system components.",
-      "skillsGained": "skills4",
-      "appreciation": "app4"
+      "skillsGained": "Technical communication and teaching.;Strengthened understanding of digital design fundamentals.",
+      "appreciation": "Built confidence in explaining hardware concepts.;Inspired by students’ progress and engagement."
+    },
+    "3": {
+      "title": "Teaching assistant - Fundamentals of Engineering Computation",
+      "location": "University of Ottawa - Ottawa",
+      "date": "Sept 2024 - Dec 2024",
+      "responsibilities": "Support labs on programming logic in C programming.;Grade code assignments and debug student code.;Mentor students in logical problem-solving approaches.",
+      "skillsGained": "Improved proficiency in computational thinking.;Reinforced best practices in clean coding and debugging.",
+      "appreciation": "Saw diverse approaches to solving programming tasks."
+    },
+    "4": {
+      "title": "Teaching assistant - Digital System I",
+      "location": "University of Ottawa - Ottawa",
+      "date": "Jan 2024 - Apr 2024",
+      "responsibilities": "Held weekly office hours and responded to student queries to support learning and understanding of course material.; Led tutorial/lab sessions covering Quartus II, Altera Card and basic digital system components.",
+      "skillsGained": "Technical communication and teaching.;Strengthened understanding of digital design fundamentals.",
+      "appreciation": "Built confidence in explaining hardware concepts.;Inspired by students’ progress and engagement."
     },
     "5": {
-      "title": "title5",
-      "location": "location5",
-      "date": "date5",
-      "responsibilities": "res5",
-      "skillsGained": "skills5",
-      "appreciation": "app5"
+      "title": "Beavertail Staff",
+      "location": "Ottawa",
+      "date": "Jan 2023 - Apr 2023",
+      "responsibilities": "Prepare and serve beavertails in a fast-paced environment.;Handle customer service and manage point-of-sale systems.",
+      "skillsGained": "Time management and multitasking.;Team collaboration under pressure.",
+      "appreciation": "Built resilience and efficiency during Winterlude.;Gained confidence in face-to-face service roles."
+    },
+    "6": {
+      "title": "SSENSE - Warehouse clerk",
+      "location": "Montreal",
+      "date": "May 2022 - Aug 2022",
+      "responsibilities": "Receive, inspect, and organize incoming shipments.;Prepare and package outgoing orders accurately and efficiently.; Provided additional proof for clothing and accessories measuring metrics for their website.",
+      "skillsGained": "Physical organization and attention to detail.;Operation of warehouse software.",
+      "appreciation": "Learned the importance of accuracy and speed in logistics."
+    },
+    "7": {
+      "title": "Jinchi - Salesgirl",
+      "location": "Mauritius",
+      "date": "Nov 2018 - Jan 2019",
+      "responsibilities": "Assist customers with purchases and school uniform and utilities inquiries.;Maintain merchandise displays and handle stock.",
+      "skillsGained": "Persuasive communication and upselling.;Customer service etiquette.",
+      "appreciation": "Developed professionalism and interpersonal fluency"
     }
   },
   "academics": {
     "1": {
-      "title": "title1",
-      "location": "location1",
-      "date": "date1",
-      "Description": "des1",
-      "courses": "skills1",
-      "appreciation": "app1"
+      "title": "University of Ottawa - BASc Electrical Engineering and Computing Technology",
+      "location": "Ottawa - Canada",
+      "date": "Sept 2020 - May 2026",
+      "Description": "",
+      "courses": "",
+      "appreciation": ""
     },
     "2": {
-      "title": "title1",
-      "location": "location1",
-      "date": "date1",
-      "Description": "des1",
-      "courses": "skills1",
-      "appreciation": "app1"
+      "title": "GMD Atchia State College - Science Side O & A level Cambridge",
+      "location": "Port-Louis - Mauritius",
+      "date": "Jan 2012 - Oct 2019",
+      "Description": "",
+      "courses": "",
+      "appreciation": ""
     }
   },
-  "workTotal": 5,
+  "workTotal": 7,
   "academicsTotal": 2
 }

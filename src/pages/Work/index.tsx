@@ -17,8 +17,8 @@ const Work: React.FC<NavBarProps> = ({ currentSection, onNavigate, onNavigateToD
         {id:3, title: 'Teaching assistant - Fundamentals of Engineering Computation', date:'Sept 2024 - Dec 2024'},
         {id:4, title: 'Teaching assistant - Digital System I', date:'Jan 2024 - Apr 2024'},
         {id:5, title: 'Beavertail Staff', date:'Jan 2023 - Apr 2023'},
-        {id:6, title: 'Salesgirl', date:'Nov 2018 - Jan 2019'},
-        {id:7, title: 'Office Assistant', date:'Nov 2016 - Jan 2017'},
+        {id:6, title: 'SSENSE - Warehouse clerk', date:'May 2022 - Aug 2022'},
+        {id:7, title: 'Jinchi - Salesgirl', date:'Nov 2018 - Jan 2019'}
     ]
 
     return (

@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 :root{
   --primary-color: hsl(214, 80%, 52%);
-  --text-primary-color: hsl(211, 40%, 46%);
+  --text-primary-color: hsl(214, 32%, 49%);
   --secondary-color: #EC8305;
+  --text-secondary-color: #7a5c37;
   --background-color: #091057;
   --text-color: #DBD3D3;
-
   --small-size:375px;
   --medium-size:775px;
 }
