@@ -4,7 +4,6 @@
     align-items: flex-start;
     justify-content: start;
     padding-top: 3rem;
-    width: 100vw;
     height: 93vh;
     background-color: #000;
     color: var(--secondary-color);
@@ -29,3 +28,42 @@ strong {
     color: #ea9d46;
 }
 
+/* Responsive styles for screen width 800px and below */
+@media (max-width: 800px) {
+    .container {
+        padding-top: 2rem;
+        max-width: 95%;
+    }
+
+    .container p {
+        font-size: 0.95rem;
+    }
+
+    .content {
+        margin-left: 5px;
+    }
+
+    .description {
+        padding-left: 0.5rem;
+    }
+}
+
+/* Responsive styles for screen width 400px and below */
+@media (max-width: 400px) {
+    .container {
+        padding-top: 1.5rem;
+        max-width: 100%;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .content {
+        margin-left: 2px;
+    }
+
+    .description {
+        padding-left: 0.25rem;
+    }
+}
